@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="20.webp">
+
+<title>Sound Effects | Jhaplu</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#140b02;
+    text-align: center;
+    background-image:radial-gradient(circle at top,#5c2d00,#140b02 70%);
+    color:#fff;
+}
+
+button {
+             background-color: black;
+             color:#ff5500;
+             border: 2px solid #ff5500;
+             padding: 12px 25px;
+             border-radius: 25px;
+             font-weight: bold;
+             box-shadow: 0 0 10px #ff5500;
+        }
+        button:hover{
+    background:#ff5500;
+    color:black;
+    transform:scale(1.05);
+}
+
+/* Header */
+
+header{
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:36px;
+    color:#ff9d00;
+    text-shadow:
+    0 0 10px #ff9d00,
+    0 0 20px #ff7b00,
+    0 0 40px #ff5500;
+}
+
+header p{
+    margin-top:10px;
+    color:#ffd8a8;
+    font-size:16px;
+}
+
+/* Grid */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+/* Card */
+
+.card{
+    background:#221304;
+    border:2px solid #ff9900;
+    border-radius:18px;
+    padding:22px;
+    text-align:center;
+    transition:.35s;
+    box-shadow:0 0 12px rgba(255,153,0,.35);
+}
+
+.card:hover{
+    transform:translateY(-8px) scale(1.03);
+    box-shadow:
+    0 0 15px #ff9900,
+    0 0 30px rgba(255,153,0,.8);
+}
+
+.card h3{
+    margin-bottom:18px;
+    color:#fff;
+    text-shadow:0 0 8px rgba(255,153,0,.5);
+}
+
+/* Audio */
+
+audio{
+    width:100%;
+    margin-bottom:18px;
+    border-radius:10px;
+}
+
+/* Download Button */
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:linear-gradient(135deg,#ff7b00,#ffb000);
+    color:#fff;
+    font-weight:bold;
+    padding:12px 24px;
+    border-radius:30px;
+    transition:.3s;
+    box-shadow:0 0 10px rgba(255,153,0,.5);
+}
+
+.btn:hover{
+    transform:scale(1.08);
+    box-shadow:
+    0 0 15px #ff9900,
+    0 0 30px #ff9900;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+    border-top:1px solid rgba(255,153,0,.3);
+    color:#ffd3a3;
+}
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    header h1{
+        font-size:28px;
+    }
+
+    .btn{
+        display:block;
+        width:100%;
+    }
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>🔊 Sound Effects</h1>
+    <p>Free Sound Effects for Video Editing</p>
+</header>
+
+<a href="index.html">
+        <button>Back to Home</button>
+    </a>
+
+<div class="container">
+
+    <div class="card">
+        <h3>Sound Pack 1</h3>
+        <audio controls>
+            <source src="1.mp3" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="1.mp3" download class="btn">Download</a>
+    </div>
+
+    <div class="card">
+        <h3>Meme Sounds</h3>
+        <audio controls>
+            <source src="6.mp3" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="6.mp3" download class="btn">Download</a>
+    </div>
+
+    <div class="card">
+        <h3>Jhaplu Sound Effects</h3>
+        <audio controls>
+            <source src="2.mp3" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="2.mp3" download class="btn">Download</a>
+    </div>
+    
+    <div class="card">
+        <h3>Sound pack 2</h3>
+        <audio controls>
+            <source src="3.mp3" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="3.mp3" download class="btn">Download</a>
+    </div>
+    
+    <div class="card">
+        <h3>Sound pack 3</h3>
+        <audio controls>
+            <source src="4.mp3" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="4.mp3" download class="btn">Download</a>
+    </div>
+    
+    <div class="card">
+        <h3>Sound pack 4</h3>
+        <audio controls>
+            <source src="5.mp3" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="5.mp3" download class="btn">Download</a>
+    </div>
+    
+    <hr>
+    <h2>Join us on</h2>
+
+    <a href="https://t.me/jhapluty"  target="_blank">
+        <button>Telegram</button>
+    </a>
+
+    <a href="https://youtube.com/@jhapluff" target="_blank">
+        <button>YouTube Channel</button>
+    </a>
+
+</div>
+
+<footer>
+    © 2026 Jhaplu Editing Elements
+</footer>
+
+</body>
+</html>

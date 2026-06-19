@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editing Elements | all in one.</title>
+
+<meta charset="UTF-8">
+        <meta name="description"
+content="JHAPLU FF editing elements. Green screen, Trollface, Skullface, Sound effects.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="20.webp">
+
+<meta property="og:title" content="JHAPLU FF | EDITING Elements">
+<meta property="og:description" content="all in one, all editing elements like trollface, pngs, green screen, sound effect, and overlays">
+<meta property="og:image" content="2.webp">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background-image:url("B.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position:center;
+    text-align: center;
+    min-height:100vh;
+    color:white;
+}
+button {
+             background-color: black;
+             color: red;
+             border: 2px solid red;
+             padding: 12px 25px;
+             border-radius: 25px;
+             font-weight: bold;
+             box-shadow: 0 0 10px red;
+        }
+        button:hover{
+    background:red;
+    color:black;
+    transform:scale(1.05);
+}
+
+/* Heading */
+
+h1{
+    color:#ff1a1a;
+    text-shadow:
+    0 0 8px #ff0000,
+    0 0 20px #ff0000,
+    0 0 40px #990000;
+    letter-spacing:2px;
+    margin-bottom:30px;
+}
+img{
+    display:block;
+    margin:20px auto;
+    border-radius:100px;
+    box-shadow:0 0 10px red;
+}
+/* Search Box */
+
+.search{
+    display:flex;
+    justify-content:center;
+    margin:20px;
+}
+
+.search input{
+    width:90%;
+    max-width:500px;
+    padding:15px 20px;
+    border:2px solid #ff0000;
+    border-radius:50px;
+    background:#111;
+    color:white;
+    font-size:16px;
+    outline:none;
+    box-shadow:
+    0 0 10px rgba(255,0,0,.5);
+    transition:.3s;
+}
+
+.search input:focus{
+    box-shadow:
+    0 0 10px #ff0000,
+    0 0 25px #ff0000,
+    0 0 40px rgba(255,0,0,.6);
+}
+
+/* Cards */
+
+.cards{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#111;
+    border:2px solid #ff0000;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.35s;
+    box-shadow:
+    0 0 8px rgba(255,0,0,.4);
+}
+
+.card:hover{
+    transform:translateY(-8px) scale(1.03);
+    box-shadow:
+    0 0 15px #ff0000,
+    0 0 30px rgba(255,0,0,.8),
+    0 0 50px rgba(255,0,0,.5);
+}
+
+/* Button Style */
+
+.card a{
+    display:block;
+    text-decoration:none;
+    text-align:center;
+    padding:28px 15px;
+    color:#fff;
+    font-size:22px;
+    font-weight:bold;
+    letter-spacing:1px;
+    background:linear-gradient(135deg,#7a0000,#ff0000);
+    transition:.3s;
+    text-shadow:0 0 8px rgba(255,255,255,.5);
+}
+
+.card a:hover{
+    background:linear-gradient(135deg,#ff0000,#ff4d4d);
+    color:#fff;
+}
+
+/* Footer */
+
+footer{
+    margin-top:50px;
+    padding:20px;
+    text-align:center;
+    color:#ff6666;
+    border-top:1px solid rgba(255,0,0,.3);
+    text-shadow:0 0 10px rgba(255,0,0,.5);
+}
+
+/* Mobile */
+
+@media(max-width:600px){
+
+    h1{
+        font-size:24px;
+        padding:20px 10px 0;
+    }
+
+    .card a{
+        font-size:18px;
+        padding:22px 10px;
+    }
+
+    .search input{
+        font-size:15px;
+    }
+ 
+  /* NAVBAR */
+
+.navbar{
+    width:100%;
+    hight:auto;
+    display:flex;
+    align-items:center;
+    padding:5px 8%;
+    background:rgba(10,10,10,0.95);
+    border-bottom:2px solid #ff0000;
+    box-shadow:0 0 5px rgba(255,0,0,0.4);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#ff1a1a;
+    text-shadow:
+        0 0 8px #ff0000,
+        0 0 20px #ff0000;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#ffffff;
+    padding:10px 18px;
+    border:1px solid transparent;
+    border-radius:30px;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+    background:#ff0000;
+    border-color:#ff0000;
+    box-shadow:
+        0 0 10px #ff0000,
+        0 0 20px rgba(255,0,0,0.7);
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .navbar{
+      flex-direction:column;
+        gap:15px;
+        padding:15px
+    justify-content:space-between;
+    align-items:center;
+    }
+
+    .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+</style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">JHAPLU FF</div>
+
+    <ul class="nav-links">
+        <li><a href="green.html">Green-sceen</a></li>
+        <li><a href="sound.html">Sound-pack</a></li>
+        <li><a href="troll.html">Trollface</a></li>
+        <li><a href="blue.html">Blue-emoji</a></li>
+    </ul>
+</nav>
+  
+  <h1 style="text-align:center; padding-top:20px; font-size:32px;">
+    JHAPLU FF | EDITING PACKS
+</h1>
+<h2>All in one : all editing elements</h2>
+
+ <img src ="2.webp" height = "200" alt ="Jhaplu ff">
+
+
+
+<div class="search">
+    <input type="text" placeholder="Search editing elements...">
+</div>
+
+<div class="cards">
+
+    <div class="card">
+        <a href="troll.html">TROLL FACE</a>
+    </div>
+
+    <div class="card">
+        <a href="skull.html">SKULL FACE</a>
+    </div>
+
+    <div class="card">
+        <a href="blue.html">BLUE EMOJI</a>
+    </div>
+
+    <div class="card">
+        <a href="green.html">GREEN SCREEN</a>
+    </div>
+
+    <div class="card">
+        <a href="sound.html">SOUND EFFECT</a>
+    </div>
+    
+    <hr>
+    <h2>Join us on</h2>
+
+    <a href="https://t.me/jhapluty"  target="_blank">
+        <button>Telegram</button>
+    </a>
+
+    <a href="https://youtube.com/@jhapluff" target="_blank">
+        <button>YouTube Channel</button>
+    </a>
+    
+ </div>
+
+<footer>
+    © 2026 Jhaplu Editing Elements
+</footer>
+
+<script>
+const searchInput = document.querySelector(".search input");
+
+searchInput.addEventListener("keydown", function(e){
+
+    if(e.key === "Enter"){
+
+        const value = this.value.trim().toLowerCase();
+
+        if(value.includes("troll")){
+            window.location.href = "troll.html";
+        }
+        else if(value.includes("green")){
+            window.location.href = "green.html";
+        }
+        else if(value.includes("sound")){
+            window.location.href = "sound.html";
+        }
+        else if(value.includes("blue")){
+            window.location.href = "blue.html";
+        }
+        else if(value.includes("skull")){
+            window.location.href = "skull.html";
+        }
+        else{
+            alert("No matching page found!");
+        }
+    }
+
+});
+</script>
+
+</body>
+</html>
